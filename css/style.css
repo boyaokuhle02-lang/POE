@@ -1,0 +1,29 @@
+/* Coastal Cut Barbershop East London - style.css */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;line-heigh:1.6;color:#222;background:#f9f9f6}
+header{background:#0a1a2a;color:white;padding:15px}
+nav a{color:#f9c74f;text-decoration:none;margin:0 8px;font-weight:bold}
+nav a:hover{color:white}
+main{max-width:1000px;margin:20px auto;padding:0 20px}
+.hero{background:#0a1a2a;color:white;padding:60px 20px;text-align:center;border-radius:10px}
+.btn{background:#f9c74f;color:#0a1a2a;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-weight:bold;text-decoration:none;display:inline-block}
+.btn:hover{background:#e6b73a}
+.gallery{display:flex;gap:15px;flex-wrap:wrap;margin:20px 0}
+.gallery img{width:300px;height:200px;object-fit:cover;border-radius:8px;margin:15px 0}
+.cost-box{background:#eef;border:2px solid #0a1a2a;padding:15px;border-radius:8px;margin:15px 0}
+label{display:block;margin:12px 0}
+input,select,textarea{width:100%;padding:10px;margin-top:5px;border:1px solid #ccc;border-radius:5px}
+.accordion-header{width:100%;text-align:left;padding:15px;background:#0a1a2a;color:white;border:none;margin:5px 0;cursor:pointer;border-radius:5px}
+.accordion-body{display:none;padding:15px;background:white;border:1px solid #ddd}
+.accordion-body.active{display:block}
+.tab-links{padding:10px 20px;cursor:pointer;border:none;background:#ddd;margin-right:5px}
+.tab-links.active{background:#0a1a2a;color:white}
+.tab-content{display:none;padding:20px;background:white;margin-top:10px;border-radius:5px}
+.modal{display:none;position:fixed;top:0;left:0width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:1000}
+.modal-content{background:white;margin:15% auto;padding:20px;width:80%;max-width:500px;border-radius:10px}
+#lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgb(0,0,0,0.9);z-index:2000;text-align:center}
+#lightbox img{max-width:90%;max-height:90%;margin-top:5%}
+.fade-in{animation:fade 1s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+footer{background:#0a1a2a;color:white;text-align:center;padding:20px;margin-top:40px}
+@media(max-width:600px){.gallery img{width:100%}}

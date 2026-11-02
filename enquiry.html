@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width initial-scale=1.0">
+<title>Enquire & Book East London Barbershop | Cost Calculator</title>
+<meta name="description" content="Book Coastal Cut East London. Use cost calculator, check haircut price, book fade, beard trim. Enquire form with instant quote.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<nav>
+<h1>Coastal Cut Barbershop</h1>
+<a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="enquiry.html">Enquiry</a> | <a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<h1>Enquiry & Cost Calculator - East London</h1>
+
+<form id="enquiryForm" onsubmit="return validateEnquiry()">
+<label>Full Name* <input type="text" id="name" required></label>
+<label>Email* <input type="email" id="email" required></label>
+<label>Phone  <input type="tel" id="phone" placeholder=082 123 4567"></label>
+
+<label>Service*
+<select id="serviceSelect" required onchange="calculateCost()">
+<option value="">--Choose--</option>
+<option value="180">Skin Fade - R180</option>
+<option value="120">Beard Trim - R120</option>
+<option value="150">Classic Cut - R150</option>
+<option value="300">Fade + Beard Combo - R300</option>
+<option value="150">Sponsor a Cut - R150</option>
+</select>
+</label>
+
+<label>Number of People <input type="number" id="quantity" value="1" min="1" max="10" onchange="calculateCost()"></label>
+
+<label><input type="checkbox" id="extraBeard" value="50" onchange="calculateCost()">Add Beard Trim (+R50)</label>
+
+<div class="cost-box">
+<h3>Total Cost: R<span id="totalCost">0</span></h3>
+<p id="costBreakdown">Select service to see price</p>
+</div>
+
+<label>Preferred Date* <input type="date" id="date" required></label>
+<label>Message <textarea id="message" rows="4" placeholder="Any special request?"></textarea></label>
+
+<button type="submit" class="btn">Send Enquiry</button>
+<p id="formError" style="color:red"></p>
+</form>
+
+<div id="thankYou" style="display:none">
+<h2>Thank you! We recieved your enquiry for East London boking.</h2>
+<p>We will reply within 2 hours during 09:00-19:00.</p>
+</div>
+
+</main>
+<footer><p>(c) 2026 Coastal Cut Barbershop East London</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

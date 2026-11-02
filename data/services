@@ -1,0 +1,32 @@
+[
+	{
+	  "name": "Skin Fade East London",
+	  "price": 180,
+	  "desc": "Premium skin fade with precision line up, 45 min at Beachfront",
+	  "category": "fade"
+	},
+	{  
+	 "name": "Beard Trim East London",
+	 "price": 120,
+	 "desc": "Beard trim and shape with hot towel treatment",
+	 "category": "beard"
+	},
+	{
+	  "name": "Classic Cut",
+	  "price": 150,
+	  "desc": "Classic scissor cut, timeless style",
+	  "category": "classic"
+	}
+	{
+	 "name": "Fade + Beard Combo",
+	 "price": 300,
+	 "desc": "Save R50 with our combo - Fade plus beard",
+	 "category": "combo"
+	},
+	{
+	 "name": "Sponsor a Cut East London",
+	 "price": 150,
+	 "desc": "Community project - sponsor a haircut for East London learner",
+	 "category": "community"
+	}
+]

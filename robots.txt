@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://coastalcut-eastlondon.netlify.app/sitemap.xml
